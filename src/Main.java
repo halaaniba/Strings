@@ -43,6 +43,21 @@ public class Main {
         for (Student studente : studentes1) {
             System.out.println(studente);
     }
+        //Creare un LinkedList con elementi e stamparlo in console.
+        LinkedList<Fruit> linkedList = new LinkedList<>();
+        linkedList.add(new Fruit("Pesca"));
+        linkedList.add(new Fruit("Pere"));
+        linkedList.add(new Fruit("Albicocca"));
+        linkedList.add(new Fruit("Uva"));
+        for (Fruit fruit:linkedList){
+            System.out.println(fruit.getNome());
+        }
+        linkedList.addFirst(new Fruit("Kiwi"));
+        linkedList.addLast(new Fruit("Pomodori"));
+        for (Fruit fruit:linkedList){
+            System.out.println(fruit.getNome());
+        }
+
 }
 }
 
