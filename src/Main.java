@@ -6,24 +6,23 @@ import java.util.Collections;
 import java.util.List;
 public class Main {
     public static void main(String[] args) {
-        Studente studente1 = new Studente("Giovanni", 17);
-        Studente studente2 = new Studente("Mario", 19);
-        Studente studente3 = new Studente("Marco", 16);
-        Studente studente4 = new Studente("Francesca", 12);
-        Studente studente5 = new Studente("Alberto", 14);
-        Studente studente6 = new Studente("Giulia", 18);
-        Studente studente7 = new Studente("Benedetta", 17);
+        ArrayList<Studente> studentes = new ArrayList<>();
+        studentes.add(new Studente("Marika", 15));
+        studentes.add(new Studente("Giovanni", 18));
+        studentes.add(new Studente("Filippo", 17));
+        studentes.add(new Studente("Marika", 18));
+        studentes.add(new Studente("Caterina", 15));
+        for (Studente studente : studentes) {
+            System.out.println(studente);
+        }
+        studentes.add(new Studente("Marco", 15));
+        studentes.add(new Studente("Mario", 15));
+        studentes.add(new Studente("Markus", 18));
+        studentes.add(new Studente("Marta", 17));
+        for (Studente studente : studentes) {
+            System.out.println(studente);
+        }
 
-
-        List<Studente> lista1 = Arrays.asList(studente1, studente2, studente3);
-        System.out.println(lista1);
-        List<Studente> lista2 = new ArrayList<>();
-        lista2.add(studente4);
-        lista2.add(studente5);
-        lista2.add(studente6);
-        lista2.add(studente7);
-        System.out.println(lista2);
     }
-
 }
 
